@@ -19,8 +19,8 @@ class MarkovMachine {
       if (chains.has(word)) chains.get(word).push(nextWord);
       else chains.set(word, [nextWord]);
     }
-
     this.chains = chains;
+    console.log("TYYYYPE****************", typeof this.chains, this.chains.length )
   }  
 
   // pick random choice from array
