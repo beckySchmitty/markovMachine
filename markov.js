@@ -20,7 +20,6 @@ class MarkovMachine {
       else chains.set(word, [nextWord]);
     }
     this.chains = chains;
-    console.log("TYYYYPE****************", typeof this.chains, this.chains.length )
   }  
 
   // pick random choice from array
@@ -43,8 +42,6 @@ class MarkovMachine {
 }
 
 let mm = new MarkovMachine("this is a test and I hope it works really well");
-let newWords = mm.makeText()
-console.log(newWords)
 
 module.exports = {
   MarkovMachine,
